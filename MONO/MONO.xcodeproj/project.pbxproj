@@ -10,6 +10,13 @@
 		2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08A52180225E0048E9FB /* AppDelegate.swift */; };
 		2C2F08AD218022600048E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AC218022600048E9FB /* Assets.xcassets */; };
 		2C2F08B0218022600048E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */; };
+		2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08BA218040580048E9FB /* YanMainViewController.swift */; };
+		2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08BC218040770048E9FB /* YanNavigationController.swift */; };
+		2C2F08BF218040910048E9FB /* YanBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08BE218040910048E9FB /* YanBaseViewController.swift */; };
+		2C2F08CD218064E30048E9FB /* YanRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08CC218064E30048E9FB /* YanRecommendController.swift */; };
+		2C2F08CF218064FF0048E9FB /* YanDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08CE218064FF0048E9FB /* YanDiscoverController.swift */; };
+		2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D0218065160048E9FB /* YanCommunityController.swift */; };
+		2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D2218065230048E9FB /* YanMineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +25,13 @@
 		2C2F08AC218022600048E9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F08AF218022600048E9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C2F08B1218022600048E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2F08BA218040580048E9FB /* YanMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanMainViewController.swift; sourceTree = "<group>"; };
+		2C2F08BC218040770048E9FB /* YanNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanNavigationController.swift; sourceTree = "<group>"; };
+		2C2F08BE218040910048E9FB /* YanBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanBaseViewController.swift; sourceTree = "<group>"; };
+		2C2F08CC218064E30048E9FB /* YanRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanRecommendController.swift; sourceTree = "<group>"; };
+		2C2F08CE218064FF0048E9FB /* YanDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanDiscoverController.swift; sourceTree = "<group>"; };
+		2C2F08D0218065160048E9FB /* YanCommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanCommunityController.swift; sourceTree = "<group>"; };
+		2C2F08D2218065230048E9FB /* YanMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanMineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +64,75 @@
 		2C2F08A42180225E0048E9FB /* MONO */ = {
 			isa = PBXGroup;
 			children = (
-				2C2F08A52180225E0048E9FB /* AppDelegate.swift */,
+				2C2F08B9218040250048E9FB /* Main */,
+				2C2F08B821803FAD0048E9FB /* Classes */,
+				2C2F08B721803F8B0048E9FB /* AppDelegate */,
 				2C2F08AC218022600048E9FB /* Assets.xcassets */,
 				2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */,
 				2C2F08B1218022600048E9FB /* Info.plist */,
 			);
 			path = MONO;
+			sourceTree = "<group>";
+		};
+		2C2F08B721803F8B0048E9FB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08A52180225E0048E9FB /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2C2F08B821803FAD0048E9FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08C32180493D0048E9FB /* Recommend */,
+				2C2F08C2218049320048E9FB /* Discover */,
+				2C2F08C1218049070048E9FB /* Community */,
+				2C2F08C0218048EC0048E9FB /* Mine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C2F08B9218040250048E9FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08BA218040580048E9FB /* YanMainViewController.swift */,
+				2C2F08BC218040770048E9FB /* YanNavigationController.swift */,
+				2C2F08BE218040910048E9FB /* YanBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C2F08C0218048EC0048E9FB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08D2218065230048E9FB /* YanMineController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2C2F08C1218049070048E9FB /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08D0218065160048E9FB /* YanCommunityController.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		2C2F08C2218049320048E9FB /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08CE218064FF0048E9FB /* YanDiscoverController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2C2F08C32180493D0048E9FB /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08CC218064E30048E9FB /* YanRecommendController.swift */,
+			);
+			path = Recommend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */,
+				2C2F08BF218040910048E9FB /* YanBaseViewController.swift in Sources */,
+				2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */,
+				2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */,
+				2C2F08CF218064FF0048E9FB /* YanDiscoverController.swift in Sources */,
+				2C2F08CD218064E30048E9FB /* YanRecommendController.swift in Sources */,
 				2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */,
+				2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
