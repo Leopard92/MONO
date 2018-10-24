@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08A52180225E0048E9FB /* AppDelegate.swift */; };
-		2C2F08A82180225E0048E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08A72180225E0048E9FB /* ViewController.swift */; };
-		2C2F08AB2180225E0048E9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08A92180225E0048E9FB /* Main.storyboard */; };
 		2C2F08AD218022600048E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AC218022600048E9FB /* Assets.xcassets */; };
 		2C2F08B0218022600048E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +15,6 @@
 /* Begin PBXFileReference section */
 		2C2F08A22180225E0048E9FB /* MONO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F08A52180225E0048E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2F08A72180225E0048E9FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C2F08AA2180225E0048E9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F08AC218022600048E9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F08AF218022600048E9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C2F08B1218022600048E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				2C2F08A52180225E0048E9FB /* AppDelegate.swift */,
-				2C2F08A72180225E0048E9FB /* ViewController.swift */,
-				2C2F08A92180225E0048E9FB /* Main.storyboard */,
 				2C2F08AC218022600048E9FB /* Assets.xcassets */,
 				2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */,
 				2C2F08B1218022600048E9FB /* Info.plist */,
@@ -90,6 +84,7 @@
 		2C2F089A2180225E0048E9FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Yan;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Tencent;
@@ -124,7 +119,6 @@
 			files = (
 				2C2F08B0218022600048E9FB /* LaunchScreen.storyboard in Resources */,
 				2C2F08AD218022600048E9FB /* Assets.xcassets in Resources */,
-				2C2F08AB2180225E0048E9FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F08A82180225E0048E9FB /* ViewController.swift in Sources */,
 				2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +136,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C2F08A92180225E0048E9FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C2F08AA2180225E0048E9FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,9 +265,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
 				INFOPLIST_FILE = MONO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,9 +285,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
 				INFOPLIST_FILE = MONO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
