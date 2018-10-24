@@ -14,22 +14,51 @@ class YanMainViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setupChildControllers()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension YanMainViewController {
+    
+    private func setupChildControllers() {
+        let array = [
+            ["clsName": "YanRecommendController", "title": "", "imageName": "tab-recommend"],
+            ["clsName": "YanDiscoverController", "title": "", "imageName": "tab-explore"],
+            ["clsName": "YanCommunityController", "title": "", "imageName": "tab-social"],
+            ["clsName": "YanMineController", "title": "", "imageName": "tab-mine"],
+        ]
+        
+        var arrayM = [UIViewController]()
+        for dict in array {
+            arrayM.append(controller(dict: dict))
+        }
+        
+        viewControllers = arrayM
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func controller(dict:[String: String]) -> UIViewController {
+        
+        guard let clsName = dict["clsName"],
+            let title = dict["title"],
+            let imageName = dict["imageName"],
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+            else {
+                
+                return UIViewController()
+        }
+        
+        let vc = cls.init()
+        
+        vc.title = title
+        vc.tabBarItem.image = UIImage(named: imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "-active")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.imageInsets = UIEdgeInsetsMake(0, 0, -10, 0)
+        
+        let nav = YanNavigationController(rootViewController: vc)
+        
+        return nav
+        
     }
-    */
-
 }

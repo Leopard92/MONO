@@ -17,6 +17,7 @@
 		2C2F08CF218064FF0048E9FB /* YanDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08CE218064FF0048E9FB /* YanDiscoverController.swift */; };
 		2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D0218065160048E9FB /* YanCommunityController.swift */; };
 		2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D2218065230048E9FB /* YanMineController.swift */; };
+		2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		2C2F08CE218064FF0048E9FB /* YanDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanDiscoverController.swift; sourceTree = "<group>"; };
 		2C2F08D0218065160048E9FB /* YanCommunityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanCommunityController.swift; sourceTree = "<group>"; };
 		2C2F08D2218065230048E9FB /* YanMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanMineController.swift; sourceTree = "<group>"; };
+		2C2F08D421806B8F0048E9FB /* MONO-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MONO-Bridge.h"; sourceTree = "<group>"; };
+		2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +67,11 @@
 		2C2F08A42180225E0048E9FB /* MONO */ = {
 			isa = PBXGroup;
 			children = (
+				2C2F08D5218078430048E9FB /* Tools */,
 				2C2F08B9218040250048E9FB /* Main */,
 				2C2F08B821803FAD0048E9FB /* Classes */,
 				2C2F08B721803F8B0048E9FB /* AppDelegate */,
+				2C2F08D421806B8F0048E9FB /* MONO-Bridge.h */,
 				2C2F08AC218022600048E9FB /* Assets.xcassets */,
 				2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */,
 				2C2F08B1218022600048E9FB /* Info.plist */,
@@ -133,6 +138,22 @@
 				2C2F08CC218064E30048E9FB /* YanRecommendController.swift */,
 			);
 			path = Recommend;
+			sourceTree = "<group>";
+		};
+		2C2F08D5218078430048E9FB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08D62180784B0048E9FB /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2C2F08D62180784B0048E9FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */,
+				2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */,
 				2C2F08BF218040910048E9FB /* YanBaseViewController.swift in Sources */,
 				2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */,
 				2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */,
@@ -360,6 +382,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MONO/MONO-Bridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -380,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MONO/MONO-Bridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
