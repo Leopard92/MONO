@@ -10,6 +10,11 @@ import UIKit
 
 class YanNavigationController: UINavigationController {
 
+    override func viewDidLoad() {
+        UIApplication.shared.statusBarStyle = .lightContent
+        self.navigationBar.isTranslucent = false
+    }
+    
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         if childViewControllers.count > 0 {

@@ -16,6 +16,11 @@ class YanMainViewController: UITabBarController {
         // Do any additional setup after loading the view.
         
         setupChildControllers()
+        
+        let tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.shadowImage = UIImage()
+        tabBarAppearance.backgroundImage = #imageLiteral(resourceName: "tab_bg")
+        
     }
 
 }
