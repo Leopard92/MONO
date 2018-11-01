@@ -6,8 +6,4 @@
 //  Copyright © 2018年 Tencent. All rights reserved.
 //
 
-#ifndef MONO_Bridge_h
-#define MONO_Bridge_h
-
-
-#endif /* MONO_Bridge_h */
+#import "UIImage+LaunchImage.h"

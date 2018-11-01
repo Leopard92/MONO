@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1CB04F2188416800552764 /* YanStartMovieHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1CB04E2188416800552764 /* YanStartMovieHelper.swift */; };
+		2C1CB05121884AED00552764 /* YanStartMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1CB05021884AED00552764 /* YanStartMovieView.swift */; };
 		2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08A52180225E0048E9FB /* AppDelegate.swift */; };
 		2C2F08AD218022600048E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AC218022600048E9FB /* Assets.xcassets */; };
 		2C2F08B0218022600048E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F08AE218022600048E9FB /* LaunchScreen.storyboard */; };
@@ -18,9 +20,13 @@
 		2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D0218065160048E9FB /* YanCommunityController.swift */; };
 		2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D2218065230048E9FB /* YanMineController.swift */; };
 		2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */; };
+		2CEF94532189A06600FACEA4 /* UIImage+LaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */; };
+		ED773203C2585121FDB56D8B /* Pods_MONO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1CB04E2188416800552764 /* YanStartMovieHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanStartMovieHelper.swift; sourceTree = "<group>"; };
+		2C1CB05021884AED00552764 /* YanStartMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanStartMovieView.swift; sourceTree = "<group>"; };
 		2C2F08A22180225E0048E9FB /* MONO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F08A52180225E0048E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C2F08AC218022600048E9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +41,11 @@
 		2C2F08D2218065230048E9FB /* YanMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanMineController.swift; sourceTree = "<group>"; };
 		2C2F08D421806B8F0048E9FB /* MONO-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MONO-Bridge.h"; sourceTree = "<group>"; };
 		2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		2CEF94512189A06500FACEA4 /* UIImage+LaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LaunchImage.h"; sourceTree = "<group>"; };
+		2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LaunchImage.m"; sourceTree = "<group>"; };
+		3F55DAB61306522AB1FB8647 /* Pods-MONO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.debug.xcconfig"; sourceTree = "<group>"; };
+		B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MONO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF49D9A665443AEDF91CC04D /* Pods-MONO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.release.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED773203C2585121FDB56D8B /* Pods_MONO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F944D48D20CDD2899C3C959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1816C9A7846F4A55BB96E4C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F55DAB61306522AB1FB8647 /* Pods-MONO.debug.xcconfig */,
+				FF49D9A665443AEDF91CC04D /* Pods-MONO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2C2F08992180225E0048E9FB = {
 			isa = PBXGroup;
 			children = (
 				2C2F08A42180225E0048E9FB /* MONO */,
 				2C2F08A32180225E0048E9FB /* Products */,
+				1816C9A7846F4A55BB96E4C3 /* Pods */,
+				0F944D48D20CDD2899C3C959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				2C2F08A52180225E0048E9FB /* AppDelegate.swift */,
+				2C1CB04E2188416800552764 /* YanStartMovieHelper.swift */,
+				2C1CB05021884AED00552764 /* YanStartMovieView.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -143,6 +176,7 @@
 		2C2F08D5218078430048E9FB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2CEF94502189A04300FACEA4 /* Additions */,
 				2C2F08D62180784B0048E9FB /* Extensions */,
 			);
 			path = Tools;
@@ -156,6 +190,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2CEF94502189A04300FACEA4 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				2CEF94512189A06500FACEA4 /* UIImage+LaunchImage.h */,
+				2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2F08B4218022600048E9FB /* Build configuration list for PBXNativeTarget "MONO" */;
 			buildPhases = (
+				ED4A6135C2D0741A68CE3C68 /* [CP] Check Pods Manifest.lock */,
 				2C2F089E2180225E0048E9FB /* Sources */,
 				2C2F089F2180225E0048E9FB /* Frameworks */,
 				2C2F08A02180225E0048E9FB /* Resources */,
+				C14E9E46B52043E9CA5B8E85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +267,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C14E9E46B52043E9CA5B8E85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED4A6135C2D0741A68CE3C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MONO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C2F089E2180225E0048E9FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,6 +333,9 @@
 			files = (
 				2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */,
 				2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */,
+				2CEF94532189A06600FACEA4 /* UIImage+LaunchImage.m in Sources */,
+				2C1CB04F2188416800552764 /* YanStartMovieHelper.swift in Sources */,
+				2C1CB05121884AED00552764 /* YanStartMovieView.swift in Sources */,
 				2C2F08BF218040910048E9FB /* YanBaseViewController.swift in Sources */,
 				2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */,
 				2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */,
@@ -369,6 +476,7 @@
 		};
 		2C2F08B5218022600048E9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F55DAB61306522AB1FB8647 /* Pods-MONO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -390,6 +498,7 @@
 		};
 		2C2F08B6218022600048E9FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF49D9A665443AEDF91CC04D /* Pods-MONO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
