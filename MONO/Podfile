@@ -1,0 +1,14 @@
+platform:ios,'9.0'
+target 'MONO' do
+use_frameworks!
+
+pod 'SnapKit'
+pod 'MJRefresh'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'Moya'
+pod 'SwiftyJSON'
+pod 'RealmSwift'
+pod 'pop'
+
+end
