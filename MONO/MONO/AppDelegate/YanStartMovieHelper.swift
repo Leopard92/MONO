@@ -11,7 +11,18 @@ import UIKit
 class YanStartMovieHelper: NSObject {
 
     static let sharedInstance = YanStartMovieHelper()
-    
-    private override init () {}
+    private override init() {}
+
 }
 
+extension YanStartMovieHelper {
+    func showStartMoviewWithMovieURL(movieURL: String) {
+        
+        let startMovie = YanStartMovieView()
+        startMovie.frame = UIScreen.main.bounds
+        startMovie.backgroundColor = UIColor.white
+        startMovie.movieUrl = movieURL
+        UIApplication.shared.keyWindow?.addSubview(startMovie)
+    }
+    
+}

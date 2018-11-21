@@ -20,6 +20,9 @@
 		2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D0218065160048E9FB /* YanCommunityController.swift */; };
 		2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D2218065230048E9FB /* YanMineController.swift */; };
 		2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */; };
+		2CC7160D218FE4F80094EEB7 /* welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2CC7160C218FE4F80094EEB7 /* welcome.mp4 */; };
+		2CEECEE021A4036D00014C25 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEECEDF21A4036D00014C25 /* APIError.swift */; };
+		2CEECEE321A408E300014C25 /* YanProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEECEE221A408E300014C25 /* YanProgressHUD.swift */; };
 		2CEF94532189A06600FACEA4 /* UIImage+LaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */; };
 		ED773203C2585121FDB56D8B /* Pods_MONO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +44,9 @@
 		2C2F08D2218065230048E9FB /* YanMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanMineController.swift; sourceTree = "<group>"; };
 		2C2F08D421806B8F0048E9FB /* MONO-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MONO-Bridge.h"; sourceTree = "<group>"; };
 		2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		2CC7160C218FE4F80094EEB7 /* welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome.mp4; sourceTree = "<group>"; };
+		2CEECEDF21A4036D00014C25 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		2CEECEE221A408E300014C25 /* YanProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanProgressHUD.swift; sourceTree = "<group>"; };
 		2CEF94512189A06500FACEA4 /* UIImage+LaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LaunchImage.h"; sourceTree = "<group>"; };
 		2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LaunchImage.m"; sourceTree = "<group>"; };
 		3F55DAB61306522AB1FB8647 /* Pods-MONO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		2C2F08A42180225E0048E9FB /* MONO */ = {
 			isa = PBXGroup;
 			children = (
+				2CC7160B218FE4DA0094EEB7 /* Source */,
 				2C2F08D5218078430048E9FB /* Tools */,
 				2C2F08B9218040250048E9FB /* Main */,
 				2C2F08B821803FAD0048E9FB /* Classes */,
@@ -176,6 +183,8 @@
 		2C2F08D5218078430048E9FB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2CEECEE121A4079A00014C25 /* HUD */,
+				2CEECEDE21A3E00A00014C25 /* Network */,
 				2CEF94502189A04300FACEA4 /* Additions */,
 				2C2F08D62180784B0048E9FB /* Extensions */,
 			);
@@ -188,6 +197,30 @@
 				2C2F08D8218079AA0048E9FB /* Bundle+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CC7160B218FE4DA0094EEB7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2CC7160C218FE4F80094EEB7 /* welcome.mp4 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2CEECEDE21A3E00A00014C25 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2CEECEDF21A4036D00014C25 /* APIError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2CEECEE121A4079A00014C25 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				2CEECEE221A408E300014C25 /* YanProgressHUD.swift */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		2CEF94502189A04300FACEA4 /* Additions */ = {
@@ -260,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC7160D218FE4F80094EEB7 /* welcome.mp4 in Resources */,
 				2C2F08B0218022600048E9FB /* LaunchScreen.storyboard in Resources */,
 				2C2F08AD218022600048E9FB /* Assets.xcassets in Resources */,
 			);
@@ -276,11 +310,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -290,11 +325,12 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -340,9 +376,11 @@
 				2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */,
 				2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */,
 				2C2F08CF218064FF0048E9FB /* YanDiscoverController.swift in Sources */,
+				2CEECEE321A408E300014C25 /* YanProgressHUD.swift in Sources */,
 				2C2F08CD218064E30048E9FB /* YanRecommendController.swift in Sources */,
 				2C2F08A62180225E0048E9FB /* AppDelegate.swift in Sources */,
 				2C2F08D3218065230048E9FB /* YanMineController.swift in Sources */,
+				2CEECEE021A4036D00014C25 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

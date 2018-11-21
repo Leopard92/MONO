@@ -3,7 +3,7 @@
 //  MONO
 //
 //  Created by 石原さとみ on 2018/10/24.
-//  Copyright © 2018年 Tencent. All rights reserved.
+//  Copy    right © 2018年 Tencent. All rights reserved.
 //
 
 import UIKit
@@ -18,9 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
-        window?.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        window?.frame = UIScreen.main.bounds
+        window?.backgroundColor = UIColor.white
         window?.rootViewController = YanMainViewController()
         window?.makeKeyAndVisible()
+        
+//        if !UserDefaults.standard.bool(forKey: "FirstLoad") {
+//            YanStartMovieHelper.sharedInstance.showStartMoviewWithMovieURL(movieURL: "welcome")
+//            UserDefaults.standard.set(true, forKey: "FirstLoad")
+//        }
+//        
+        
         
         return true
     }

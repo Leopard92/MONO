@@ -6,9 +6,12 @@ pod 'SnapKit'
 pod 'MJRefresh'
 pod 'RxSwift'
 pod 'RxCocoa'
-pod 'Moya'
+pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'RealmSwift'
 pod 'pop'
+pod 'MBProgressHUD'
+pod 'Hero'
+pod 'Kingfisher'
 
 end
