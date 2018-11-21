@@ -11,7 +11,7 @@ import MBProgressHUD
 
 class YanProgressHUD: MBProgressHUD {
 
-     func showInfo(title: String) {
+     class func showInfo(title: String) {
         let view = viewToShow()
         let hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud.mode = .text
@@ -23,7 +23,7 @@ class YanProgressHUD: MBProgressHUD {
 }
 
 extension YanProgressHUD {
-    fileprivate func viewToShow() -> UIView {
+    fileprivate class func viewToShow() -> UIView {
         var window = UIApplication.shared.keyWindow
         if window?.windowLevel != UIWindowLevelNormal {
             let windowArray = UIApplication.shared.windows

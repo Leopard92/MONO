@@ -24,6 +24,8 @@
 		2CEECEE021A4036D00014C25 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEECEDF21A4036D00014C25 /* APIError.swift */; };
 		2CEECEE321A408E300014C25 /* YanProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEECEE221A408E300014C25 /* YanProgressHUD.swift */; };
 		2CEF94532189A06600FACEA4 /* UIImage+LaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */; };
+		79BABF6321A50DB200B76A93 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BABF6221A50DB200B76A93 /* APIRouter.swift */; };
+		79BABF6721A545EA00B76A93 /* YanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BABF6621A545EA00B76A93 /* YanAPI.swift */; };
 		ED773203C2585121FDB56D8B /* Pods_MONO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		2CEF94512189A06500FACEA4 /* UIImage+LaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LaunchImage.h"; sourceTree = "<group>"; };
 		2CEF94522189A06500FACEA4 /* UIImage+LaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LaunchImage.m"; sourceTree = "<group>"; };
 		3F55DAB61306522AB1FB8647 /* Pods-MONO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.debug.xcconfig"; sourceTree = "<group>"; };
+		79BABF6221A50DB200B76A93 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		79BABF6621A545EA00B76A93 /* YanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YanAPI.swift; sourceTree = "<group>"; };
 		B02B97B1EED7D09F689633A6 /* Pods_MONO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MONO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF49D9A665443AEDF91CC04D /* Pods-MONO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.release.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				2CEECEDF21A4036D00014C25 /* APIError.swift */,
+				79BABF6221A50DB200B76A93 /* APIRouter.swift */,
+				79BABF6621A545EA00B76A93 /* YanAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -319,12 +326,12 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -334,7 +341,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2F08D1218065160048E9FB /* YanCommunityController.swift in Sources */,
+				79BABF6321A50DB200B76A93 /* APIRouter.swift in Sources */,
 				2C2F08D9218079AA0048E9FB /* Bundle+Extension.swift in Sources */,
 				2CEF94532189A06600FACEA4 /* UIImage+LaunchImage.m in Sources */,
 				2C1CB04F2188416800552764 /* YanStartMovieHelper.swift in Sources */,
@@ -375,6 +382,7 @@
 				2C2F08BF218040910048E9FB /* YanBaseViewController.swift in Sources */,
 				2C2F08BD218040770048E9FB /* YanNavigationController.swift in Sources */,
 				2C2F08BB218040580048E9FB /* YanMainViewController.swift in Sources */,
+				79BABF6721A545EA00B76A93 /* YanAPI.swift in Sources */,
 				2C2F08CF218064FF0048E9FB /* YanDiscoverController.swift in Sources */,
 				2CEECEE321A408E300014C25 /* YanProgressHUD.swift in Sources */,
 				2C2F08CD218064E30048E9FB /* YanRecommendController.swift in Sources */,
@@ -522,10 +530,7 @@
 				DEVELOPMENT_TEAM = 57X85VP9WN;
 				INFOPLIST_FILE = MONO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MONO/MONO-Bridge.h";
@@ -544,10 +549,7 @@
 				DEVELOPMENT_TEAM = 57X85VP9WN;
 				INFOPLIST_FILE = MONO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.MONO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MONO/MONO-Bridge.h";
